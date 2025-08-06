@@ -40,7 +40,8 @@ Try it live:
   <tr>
     <td><img width="1853" height="974" alt="Screenshot 2025-07-12 173023" src="https://github.com/user-attachments/assets/b9bb11ce-4179-4273-9d92-43e863ce3e84" />
 </td>
-    <td><img src="https://github.com/letchupkt/letchupkt.github.io/blob/main/preview3.png" width="100%"/></td>
+    <td><img width="1874" height="964" alt="image" src="https://github.com/user-attachments/assets/5859d23e-8e6f-4599-b2aa-aef7ccdddd2a" />
+</td>
   </tr>
   <tr>
     <td><img src="https://github.com/letchupkt/letchupkt.github.io/blob/main/preview4.png" width="100%"/></td>
