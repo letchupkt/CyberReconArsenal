@@ -18,24 +18,7 @@
 - URL Analyzer  
 - **More features coming soon!**
 
----
-
-## ⚙️ Installation
-
-```bash
-git clone https://github.com/letchupkt/CyberReconArsenal.git
-cd CyberReconArsenal
-pip install -r requirements.txt
-```
-
-> Requires Python 3.7 or higher.
-
----
-
-
-Choose a tool from the menu and enter the target URL or domain.
-
----
+--
 
 ## ⚠️ Disclaimer
 
