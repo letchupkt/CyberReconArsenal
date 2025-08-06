@@ -11,12 +11,6 @@
 
 ---
 
-[![Watch Video](https://img.youtube.com/vi/0lcmk1FM4bY/0.jpg)](https://github.com/letchupkt/CyberReconArsenal/blob/8393b573b4722f7aecebbc48c7bdd91f831c215e/Teal%20and%20Black%20Modern%20Cyber%20Security%20Video_20250806_212235_0001.mp4)
-
-> 🎥 Click the image above to watch a preview video of CyberRecon Arsenal in action.
-
----
-
 ## 🔍 Features
 
 - 🔎 Subdomain Finder  
