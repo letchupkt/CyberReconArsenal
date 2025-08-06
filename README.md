@@ -38,7 +38,8 @@ Try it live:
 
 <table>
   <tr>
-    <td><img src="<img width="1853" height="974" alt="Screenshot 2025-07-12 173023" src="https://github.com/user-attachments/assets/b485291f-760f-476a-bfcd-5a233438167c"/></td>
+    <td><img width="1853" height="974" alt="Screenshot 2025-07-12 173023" src="https://github.com/user-attachments/assets/b9bb11ce-4179-4273-9d92-43e863ce3e84" />
+</td>
     <td><img src="https://github.com/letchupkt/letchupkt.github.io/blob/main/preview3.png" width="100%"/></td>
   </tr>
   <tr>
