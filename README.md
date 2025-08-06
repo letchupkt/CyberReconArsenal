@@ -44,8 +44,10 @@ Try it live:
 </td>
   </tr>
   <tr>
-    <td><img src="https://github.com/letchupkt/letchupkt.github.io/blob/main/preview4.png" width="100%"/></td>
-    <td><img src="https://github.com/letchupkt/letchupkt.github.io/blob/main/preview5.png" width="100%"/></td>
+    <td><img width="1859" height="970" alt="image" src="https://github.com/user-attachments/assets/194c4c04-37d8-413c-9cfb-b08a75884b3e" />
+</td>
+    <td><img width="1857" height="966" alt="image" src="https://github.com/user-attachments/assets/5304fd77-f4a1-44b2-8c74-475d55152bf7" />
+</td>
   </tr>
 </table>
 
