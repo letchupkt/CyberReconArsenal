@@ -51,7 +51,6 @@ Try it live:
   </tr>
 </table>
 
-> Replace image URLs if needed or add more rows for additional screenshots.
 
 ---
 
