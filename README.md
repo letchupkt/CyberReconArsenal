@@ -23,8 +23,8 @@
 ## ⚙️ Installation
 
 ```bash
-git clone https://github.com/letchupkt/CyberRecon-Arsenal.git
-cd CyberRecon-Arsenal
+git clone https://github.com/letchupkt/CyberReconArsenal.git
+cd CyberReconArsenal
 pip install -r requirements.txt
 ```
 
