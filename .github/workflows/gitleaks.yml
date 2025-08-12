@@ -1,0 +1,30 @@
+name: Gitleaks Scan
+
+on:
+  workflow_dispatch:
+    inputs:
+      scan_path:
+        description: 'Path or repo URL to scan'
+        required: true
+        default: '.'
+
+jobs:
+  gitleaks_scan:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo (if scanning current repo)
+        uses: actions/checkout@v3
+
+      - name: Install Gitleaks
+        run: |
+          curl -sSfL https://raw.githubusercontent.com/gitleaks/gitleaks/master/install.sh | bash
+
+      - name: Run Gitleaks scan
+        run: ./gitleaks detect --source ${{ github.event.inputs.scan_path }} --report-path gitleaks_report.json
+
+      - name: Upload Gitleaks report
+        uses: actions/upload-artifact@v4
+        with:
+          name: gitleaks-report
+          path: gitleaks_report.json
