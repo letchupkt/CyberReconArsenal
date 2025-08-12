@@ -1,0 +1,29 @@
+name: Nmap Scan
+
+on:
+  workflow_dispatch:
+    inputs:
+      target:
+        description: 'Target IP or domain'
+        required: true
+        default: 'example.com'
+
+jobs:
+  nmap_scan:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Install Nmap
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y nmap
+
+      - name: Run Nmap scan (service version detection only)
+        run: |
+          nmap -sV -oX scan_results.xml ${{ github.event.inputs.target }}
+
+      - name: Upload scan result
+        uses: actions/upload-artifact@v4
+        with:
+          name: nmap-scan-result
+          path: scan_results.xml
