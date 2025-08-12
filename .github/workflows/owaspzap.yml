@@ -1,0 +1,29 @@
+name: OWASP ZAP Scan
+
+on:
+  workflow_dispatch:
+    inputs:
+      target_url:
+        description: 'Target URL to scan'
+        required: true
+        default: 'https://example.com'
+
+jobs:
+  zap_scan:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Download ZAP CLI
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y zaproxy
+
+      - name: Run OWASP ZAP baseline scan
+        run: |
+          zap-baseline.py -t ${{ github.event.inputs.target_url }} -r zap_report.html
+
+      - name: Upload ZAP report
+        uses: actions/upload-artifact@v4
+        with:
+          name: zap-report
+          path: zap_report.html
