@@ -1,0 +1,26 @@
+name: Nikto Scan
+
+on:
+  workflow_dispatch:
+    inputs:
+      target_url:
+        description: 'Target URL to scan'
+        required: true
+        default: 'https://example.com'
+
+jobs:
+  nikto_scan:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Install Nikto
+        run: sudo apt-get update && sudo apt-get install -y nikto
+
+      - name: Run Nikto scan
+        run: nikto -h ${{ github.event.inputs.target_url }} -output nikto_report.txt
+
+      - name: Upload Nikto report
+        uses: actions/upload-artifact@v4
+        with:
+          name: nikto-report
+          path: nikto_report.txt
